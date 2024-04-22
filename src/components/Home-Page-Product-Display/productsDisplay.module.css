@@ -1,0 +1,116 @@
+.productContainer,
+.productContainerReverse {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.productContainerReverse {
+  flex-direction: row-reverse;
+  background-color: #131313;
+}
+
+.imgContainer {
+  flex: 0.7;
+  width: 250px;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.dataContainer {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.dataContainer h1 {
+  font-size: 50px;
+  color: #f9ed32;
+  font-weight: 600;
+}
+
+.productContainer .dataContainer p,
+.productContainerReverse .dataContainer p {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.productContainer .dataContainer p {
+  color: #373737;
+}
+
+.productContainerReverse .dataContainer p {
+  color: #ededed;
+}
+
+.productContainer .dataContainer button,
+.productContainerReverse .dataContainer button {
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+}
+
+.productContainer .dataContainer button {
+  color: #373737 !important;
+  background-color: #ededed !important;
+}
+
+.productContainerReverse .dataContainer button {
+  color: #ededed !important;
+  background-color: #373737 !important;
+}
+
+@media (max-width: 1000px) {
+  .dataContainer h1 {
+    font-size: 40px;
+  }
+
+  .productContainer .dataContainer p,
+  .productContainerReverse .dataContainer p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .productContainer,
+  .productContainerReverse {
+    flex-direction: column;
+  }
+
+  .dataContainer h1 {
+    font-size: 35px;
+  }
+
+  .productContainer .dataContainer p,
+  .productContainerReverse .dataContainer p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .dataContainer h1 {
+    font-size: 30px;
+  }
+
+  .productContainer .dataContainer p,
+  .productContainerReverse .dataContainer p {
+    font-size: 18px;
+  }
+
+  .productContainer .dataContainer button,
+  .productContainerReverse .dataContainer button {
+    font-size: 16px !important;
+  }
+
+  .imgContainer {
+    flex: 1;
+    width: 100%;
+  }
+}

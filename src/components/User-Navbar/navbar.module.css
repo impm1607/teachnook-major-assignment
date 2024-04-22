@@ -1,0 +1,24 @@
+.navContainer {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s;
+  font-family: "Poppins", sans-serif;
+
+  padding: 10px 20px;
+}
+
+.loginBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.loginBtn svg {
+  font-size: 20px;
+}

@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+  background-color: #131313;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 35px;
+  color: #f9ed32;
+  font-weight: 700;
+}
+
+.sliderWrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contentWrapper span {
+  border: 5px solid #ededed;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.contentWrapper span svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  color: #ededed;
+  transform: translate(-50%, -50%);
+}
+
+.contentWrapper h1 {
+  color: #f9ed32;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.contentWrapper p {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  color: #ededed;
+  text-align: justify;
+}
+
+.nextArrow {
+  display: block;
+  color: #ededed;
+  position: absolute;
+  top: 65%;
+  right: -40px;
+  z-index: 2;
+  scale: 3;
+}
+
+.prevArrow {
+  display: block;
+  color: #ededed;
+  position: absolute;
+  top: 65%;
+  left: -40px;
+  z-index: 2;
+  scale: 3;
+}
+
+.nextArrow:hover,
+.prevArrow:hover {
+  color: #edededaf;
+}
+
+@media (max-width: 450px) {
+  .sliderWrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contentWrapper span {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  .contentWrapper span svg {
+    font-size: 30px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .contentWrapper h1 {
+    font-size: 25px;
+  }
+
+  .contentWrapper p {
+    font-size: 16px;
+  }
+
+  .nextArrow {
+    scale: 1.5;
+    right: -25px;
+  }
+
+  .prevArrow {
+    scale: 1.5;
+    left: -25px;
+  }
+}

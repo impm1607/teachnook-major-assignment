@@ -1,0 +1,56 @@
+.mainHeaderContainer {
+  position: relative;
+  height: 100svh;
+  width: 100%;
+  background-color: #252525;
+}
+
+.backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.backgroundImg img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainHeaderWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  z-index: 2;
+}
+
+.mainHeaderWrapper h5 {
+  font-size: 45px;
+  color: #f2f2f2;
+  font-weight: 500;
+}
+
+.mainHeaderWrapper h5 span {
+  font-weight: 600;
+  color: #f9ed32;
+}
+
+@media (max-width: 1000px) {
+  .mainHeaderWrapper h5,
+  .mainHeaderWrapper h5 span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mainHeaderWrapper h5,
+  .mainHeaderWrapper h5 span {
+    font-size: 30px;
+  }
+}

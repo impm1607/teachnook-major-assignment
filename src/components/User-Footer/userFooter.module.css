@@ -1,0 +1,114 @@
+.footerContainer {
+  background-color: #202020;
+  color: #ededed;
+
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.flexWrapper {
+  flex: 1;
+}
+
+.flexWrapper h1 {
+  width: max-content;
+  display: block;
+  border-bottom: 3px solid #ededed;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.pageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contentContainer h5 {
+  border-bottom: 3px solid transparent;
+  color: #ededed;
+  font-size: 20px;
+  width: max-content;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.contentContainer h5:hover {
+  color: #fff225;
+}
+
+.contentContainer h5::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 0;
+  transition: all 0.25s ease-in-out;
+  background-color: #fff225;
+  height: 3px;
+}
+
+.contentContainer h5:hover::after {
+  width: 100%;
+}
+
+.productsContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconBtn a {
+  font-size: 30px !important;
+  color: #ededed !important;
+  transition: all 0.3s;
+}
+
+.iconBtn a:hover {
+  color: #fff225 !important;
+}
+
+@media (max-width: 900px) {
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 570px) {
+  .contentContainer h5 {
+    font-size: 18px;
+  }
+
+  .flexWrapper h1 {
+    font-size: 25px;
+  }
+
+  .iconBtn button {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,12 @@
+.mapContainer {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.mapContainer iframe {
+  border: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}

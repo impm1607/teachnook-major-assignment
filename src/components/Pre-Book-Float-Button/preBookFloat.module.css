@@ -1,0 +1,27 @@
+.btnContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+
+  border: 2px solid #252525;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #f9ed32;
+
+  transition: all 0.3s;
+  animation: bounce 0.3s infinite alternate;
+}
+
+.btnContainer:hover {
+  box-shadow: 0 0 10px #252525;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
