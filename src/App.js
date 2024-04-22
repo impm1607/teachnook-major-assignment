@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Navbar from "./components/User-Navbar/Navbar";
 import UserFooter from "./components/User-Footer/UserFooter";
 
@@ -14,6 +15,12 @@ import CompareAll from "./pages/Products-Page/CompareAll";
 import PreBookModal from "./pages/Pre-Book-Modal/PreBookModal";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Navbar />
